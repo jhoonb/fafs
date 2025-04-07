@@ -6,17 +6,28 @@
   <title>para você, fafs</title>
   <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
       padding: 0;
-      background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+      box-sizing: border-box;
+    }
+
+    body {
+      background-image: url('./fundo.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
       font-family: 'Comic Neue', cursive;
       text-align: center;
       color: #ff4b5c;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
     }
 
     header {
-      background-color: #ffe600;
+      background-color: rgba(255, 230, 0, 0.9);
       padding: 2rem 1rem;
       font-family: 'Luckiest Guy', cursive;
       font-size: 3rem;
@@ -30,17 +41,15 @@
 
     .container {
       padding: 2rem;
+      flex-grow: 1;
     }
 
     .image-collage {
-      background-image: url('https://i.imgur.com/A2K7Q7y.jpeg'); /* substitua por sua própria imagem de colagem */
-      background-size: cover;
-      background-position: center;
+      background-color: rgba(255, 255, 255, 0.9);
       border-radius: 20px;
       padding: 3rem;
       margin: 2rem auto;
       max-width: 800px;
-      position: relative;
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     }
 
